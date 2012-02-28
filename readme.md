@@ -1,5 +1,5 @@
 * Slides de la présentation hook.io
-* Exemple final
+* Exemple final (rép hook.io)
 
 Penser à récupérer les modules nécessaires
 npm install hook.io
