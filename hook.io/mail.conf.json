@@ -1,0 +1,10 @@
+{
+  "host" : "xxxxxx",
+  "port" : "25", // 465 pour gmail, par exemple
+  "ssl": true,
+  "to" : "xxxx@xxx",
+  "from" : "xxxw@xxxx",
+  "authentication" : "login",
+  "username" : "xxxxx",
+  "password" : "xxxxx"
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>Hook.io NantesJS</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1274, user-scalable=no">
+	<link rel="stylesheet" href="themes/ribbon/styles/style.css">
+	<link rel="stylesheet" href="scripts/prettify.css">
+	<style>
+		#Cover H2 {
+			color:#FFF;
+			text-align:center;
+			font-size:70px;
+			}
+	</style>
+</head>
+<body class="list">
+	<header class="caption">
+		<h1>Hook.io // Nantes.JS // Fév. 2012</h1>
+		<p>Thomas Moyse, @t8g</p>
+	</header>
+
+	<div class="slide bg" id="Cover"><div>
+		<section>
+			<header>
+				<h2 style="margin-top:200px;">HOOK.IO</h2>
+			</header>
+			<img src="pictures/Hook.jpg" alt="">
+		</section>
+	</div></div>
+
+	<div class="slide" id="UnePhrase"><div>
+		<section>
+			<header>
+				<h2>Une phrase</h2>
+			</header>
+			<p>hook.io est un framework permettant de créer simplement des applications reparties sur plusieurs processus node.js</p>
+			<pre><code style="font-size:.7em;"> __    __    ______     ______    __  ___         __    ______
+|  |  |  |  /  __  \   /  __  \  |  |/  /        |  |  /  __  \
+|  |__|  | |  |  |  | |  |  |  | |  '  /         |  | |  |  |  |
+|   __   | |  |  |  | |  |  |  | |    &lt;          |  | |  |  |  |
+|  |  |  | |  `--'  | |  `--'  | |  .  \    __   |  | |  `--'  |
+|__|  |__|  \______/   \______/  |__|\__\  (__)  |__|  \______/
+</code></pre>
+		</section>
+	</div></div>
+
+	<div class="slide" id="Qui"><div>
+		<section>
+			<header>
+				<h2>Qui est derrière hook.io ?</h2>
+			</header>
+			<ul class="inner">
+				<li class="active"><img src="pictures/Nodejitsu.com.png" style="width:50%;" /></li>
+				<li>Marak Squires @marak</li>
+				<li>71 public repos sur Github</li>
+				<li><img src="pictures/flatiron.png" /></li>
+				<li></li>
+			</ul>
+		</section>
+	</div></div>
+
+	<div class="slide" id="Principe"><div>
+		<section>
+			<header>
+				<h2>Principe</h2>
+			</header>
+			<ul class="inner">
+				<li style="width:25%;position:absolute;top:24%;left:40%;border:2px solid #888;border-radius:4px;padding:10px;" class="active">HOOK SERVEUR</li>
+				<li style="width:25%;position:absolute;top:65%;left:20%;border:2px solid #888;border-radius:4px;padding:10px;">HOOK 1</li>
+				<li style="width:25%;position:absolute;top:65%;left:60%;border:2px solid #888;border-radius:4px;padding:10px;">HOOK 2</li>
+				<li style="width:25%;position:absolute;top:40%;left:30%;-webkit-transform:rotate(-45deg);">hook.emit('boom')</li>
+				<li style="width:25%;position:absolute;top:50%;left:55%;-webkit-transform:rotate(45deg);">hook.on('boom', fn)</li>
+				<li></li>
+			</ol>
+		</section>
+	</div></div>
+
+
+	<div class="slide" id="EventEmitter"><div>
+		<section>
+			<header>
+				<h2>EventEmmiter</h2>
+			</header>
+			<ul class="inner">
+				<li class="active">require('events').EventEmitter</li>
+				<li>emitter.emit('booom')</li>
+				<li>emitter.on('booom', function(){ /* ... */})</li>
+				<li>emitter.once('booom', function(){ /* ... */})</li>
+				<li>Mais :
+					<ul>
+						<li>namespaces, browser, many, off, ...</li>
+					</ul>
+				</li>
+				<li></li>
+			</ul>
+		</section>
+	</div></div>
+
+	<div class="slide" id="EventEmitter2"><div>
+		<section>
+			<header>
+				<h2>EventEmitter2</h2>
+			</header>
+			<ul class="inner">
+				<li class="active">EventEmitter on Steroïds</li>
+				<li>onAny, off, many, setMaxListeners, ...</li>
+				<li>Navigateur compatible</li>
+				<li>Plus rapide (???)</li>
+				<li></li>
+			</ul>
+		</section>
+	</div></div>
+
+	<div class="slide bg" id="demo1"><div>
+		<section>
+			<header>
+				<h2>DEMO</h2>
+			</header>
+			<img src="pictures/picture.jpg" alt="">
+		</section>
+	</div></div>
+
+	<div class="slide bg" id="monolithicApp"><div>
+		<section>
+			<header>
+				<h2>Monolithic application</h2>
+			</header>
+			<img src="pictures/monolithic.jpg" alt="">
+		</section>
+	</div></div>
+
+	<div class="slide bg" id="multiprocessApp1"><div>
+		<section>
+			<header>
+				<h2>Multiprocess application</h2>
+			</header>
+			<img src="pictures/multi1.jpg" alt="">
+		</section>
+	</div></div>
+
+	<div class="slide bg" id="multiprocessApp2"><div>
+		<section>
+			<header>
+				<h2>Multiprocess application</h2>
+			</header>
+			<img src="pictures/multi2.jpg" alt="">
+		</section>
+	</div></div>
+
+	<div class="slide bg" id="HookCloud"><div>
+		<section>
+			<header>
+				<h2>Hook Cloud</h2>
+			</header>
+			<img src="pictures/Nuages.jpg" alt="">
+		</section>
+	</div></div>
+
+	<div class="slide" id="FaultTolerant"><div>
+		<section>
+			<header>
+				<h2>Application tolérante aux pannes</h2>
+			</header>
+			<ul class="inner">
+				<li class="active">Applications plantent</li>
+				<li>Application distribuée</li>
+				<li>Consensus et Praxos</li>
+				<li>Respawning</li>
+				<li>Auto discovering</li>
+				<li>mdns (bonjour de apple)</li>
+				<li></li>
+			</ul>
+		</section>
+	</div></div>
+
+	<div class="slide bg" id="demo2"><div>
+		<section>
+			<header>
+				<h2>DEMO</h2>
+			</header>
+			<img src="pictures/picture.jpg" alt="">
+		</section>
+	</div></div>
+
+	<div class="slide" id="install"><div>
+		<section>
+			<header>
+				<h2>Installation</h2>
+			</header>
+			<ul class="inner">
+				<li class="active">npm install hook.io</li>
+				<li>C'est tout !</li>
+				<li>npm install hook.io-helloworld</li>
+				<li>apt-get install libavahi-compat-libdnssd-dev</li>
+				<li></li>
+			</ul>
+		</section>
+	</div></div>
+
+	<div class="slide" id="code1"><div>
+		<section>
+			<header>
+				<h2>Du code !</h2>
+			</header>
+			<pre class="prettyprint">
+var Hook = require('hook.io').Hook;
+hook.listen(); // serveur
+hook.connect(); // client
+hook.start(); // prem's
+			</pre>
+		</section>
+	</div></div>
+
+	<div class="slide bg" id="demo3"><div>
+		<section>
+			<header>
+				<h2>DEMO</h2>
+			</header>
+			<img src="pictures/picture.jpg" alt="">
+		</section>
+	</div></div>
+
+	<div class="slide" id="code2"><div>
+		<section>
+			<header>
+				<h2>Notre 1er hook</h2>
+			</header>
+			<pre class="prettyprint">var Hook = require('hook.io').Hook;
+var hook = new Hook({ name: 'NantesJS' });
+hook.on('hook::ready', function() {
+   hook.on('*::hello', function(data) {
+      console.log('MESSAGE RECEIVED');
+      hook.emit('received', 'message received');
+   });
+});
+hook.start();</pre>
+		</section>
+	</div></div>
+
+	<div class="slide" id="galaxy"><div>
+		<section>
+			<header>
+				<h2>Hook<b>s</b></h2>
+			</header>
+			<ul class="inner">
+				<li class="active" style="float:left;width:50%;">webserver</li>
+				<li style="float:left;width:50%;">hook.js</li>
+				<li style="float:left;width:50%;">twitter</li>
+				<li style="float:left;width:50%;">irc</li>
+				<li style="float:left;width:50%;">helloworld</li>
+				<li style="float:left;width:50%;">couch</li>
+				<li style="float:left;width:50%;">cron</li>
+				<li style="float:left;width:50%;">mailer</li>
+				<li style="float:left;width:50%;">logger</li>
+				<li style="float:left;width:50%;">sitemonitor</li>
+				<li style="float:left;width:50%;">...</li>
+			</ul>
+		</section>
+	</div></div>
+
+	<div class="slide bg" id="demo4"><div>
+		<section>
+			<header>
+				<h2>Mail Some Tweets</h2>
+			</header>
+			<img src="pictures/picture.jpg" alt="">
+		</section>
+	</div></div>
+
+	<div class="slide" id="merci"><div>
+		<section>
+			<header>
+				<h2>Merci</h2>
+			</header>
+			<ul>
+				<li>Thomas Moyse</li>
+				<li>@t8g</li>
+				<li>tmoyse@gmail.com // tmoyse@toog.fr</li>
+			</ul>
+		</section>
+	</div></div>
+
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<!--<div class="progress"><div></div></div>-->
+	<script src="scripts/script.js"></script>
+	<script src="scripts/jquery.js"></script>
+	<script src="scripts/prettify.js"></script>
+	<script>
+		$(document).ready(function(){
+			prettyPrint();
+		});
+	</script>
+	<!-- Copyright © 2010–2011 Vadim Makeev, http://pepelsbey.net/ -->
+</body>
+</html>
