@@ -1,6 +1,6 @@
 # Présentation HOOK.IO // NantesJS // Fév. 2012
 
-* Slides de la présentation hook.io
+* Slides de la présentation hook.io ( réalisée avec shower : https://github.com/pepelsbey/shower )
 * Exemple final (rép hook.io)
 
 ## Pour l'exemple
